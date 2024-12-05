@@ -1,0 +1,50 @@
+$primary-color: #4CAF50;
+$secondary-color: #ffffff;
+$font-family: 'Arial, sans-serif';
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==tablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: $primary-color;
+    color: $secondary-color;
+    padding: 1rem;
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.movie-card {
+    border: 1px solid $primary-color;
+    padding: 1rem;
+    margin: 1rem;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@include responsive(mobile) {
+    .movie-card {
+        font-size: 0.9rem;
+    }
+}

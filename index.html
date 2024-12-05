@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalog</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls">
+            <label for="genre">Filter by Genre:</label>
+            <select id="genre" aria-label="Filter movies by genre">
+                <option value="all">All</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+            </select>
+
+            <label for="sort">Sort by:</label>
+            <select id="sort" aria-label="Sort movies">
+                <option value="rating">Rating</option>
+                <option value="title">Title</option>
+            </select>
+        </section>
+
+        <div id="loader" aria-hidden="true" style="display: none;">Loading...</div>
+        <section id="movie-list" class="movie-list">
+            <!-- Movie cards will appear here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Movie Catalog | Designed for Accessibility and Performance</p>
+    </footer>
+
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>

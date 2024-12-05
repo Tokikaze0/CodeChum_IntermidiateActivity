@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Avengers: Endgame",
+        "genre": "action",
+        "rating": 8.4
+    },
+    {
+        "title": "Inception",
+        "genre": "action",
+        "rating": 8.8
+    },
+    {
+        "title": "The Shawshank Redemption",
+        "genre": "drama",
+        "rating": 9.3
+    },
+    {
+        "title": "Forrest Gump",
+        "genre": "drama",
+        "rating": 8.8
+    },
+    {
+        "title": "The Hangover",
+        "genre": "comedy",
+        "rating": 7.7
+    },
+    {
+        "title": "Superbad",
+        "genre": "comedy",
+        "rating": 7.6
+    }
+]

@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial, sans-serif";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4CAF50;
+  color: #ffffff;
+  padding: 1rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.movie-card {
+  border: 1px solid #4CAF50;
+  padding: 1rem;
+  margin: 1rem;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
