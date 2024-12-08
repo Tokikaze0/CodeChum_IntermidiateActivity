@@ -1,5 +1,6 @@
 $primary-color: #4CAF50;
 $secondary-color: #ffffff;
+$hover-color: #a0b1a1;
 $font-family: 'Arial, sans-serif';
 
 @mixin responsive($breakpoint) {
@@ -29,8 +30,14 @@ header {
 
     nav ul {
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         gap: 1rem;
     }
+}
+
+.controls {
+    margin-top: 2%;
 }
 
 .movie-card {
@@ -40,6 +47,7 @@ header {
 
     &:hover {
         transform: scale(1.05);
+        background: $hover-color;
     }
 }
 

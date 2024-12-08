@@ -11,7 +11,13 @@ header {
 }
 header nav ul {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: 1rem;
+}
+
+.controls {
+  margin-top: 2%;
 }
 
 .movie-card {
@@ -21,6 +27,7 @@ header nav ul {
 }
 .movie-card:hover {
   transform: scale(1.05);
+  background: #a0b1a1;
 }
 
 @media (max-width: 768px) {
