@@ -24,6 +24,7 @@ header nav ul {
   border: 1px solid #4CAF50;
   padding: 1rem;
   margin: 1rem;
+  transition: transform 0.2s, background 0.2s;
 }
 .movie-card:hover {
   transform: scale(1.05);
@@ -33,6 +34,11 @@ header nav ul {
 @media (max-width: 768px) {
   .movie-card {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  .movie-card {
+    font-size: 1rem;
   }
 }
 
