@@ -1,8 +1,10 @@
+// Define color and font variables
 $primary-color: #4CAF50;
 $secondary-color: #ffffff;
 $hover-color: #a0b1a1;
 $font-family: 'Arial, sans-serif';
 
+// Mixin for responsive breakpoints
 @mixin responsive($breakpoint) {
     @if $breakpoint ==mobile {
         @media (max-width: 768px) {
@@ -17,6 +19,7 @@ $font-family: 'Arial, sans-serif';
     }
 }
 
+// Global styles
 body {
     font-family: $font-family;
     margin: 0;
@@ -44,6 +47,7 @@ header {
     border: 1px solid $primary-color;
     padding: 1rem;
     margin: 1rem;
+    transition: transform 0.2s, background 0.2s;
 
     &:hover {
         transform: scale(1.05);
@@ -51,8 +55,15 @@ header {
     }
 }
 
+// Responsive styles
 @include responsive(mobile) {
     .movie-card {
         font-size: 0.9rem;
+    }
+}
+
+@include responsive(tablet) {
+    .movie-card {
+        font-size: 1rem;
     }
 }
